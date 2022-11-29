@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Sessão geral */
+
+* {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 23px;
+}
+
+html {
+    margin: 80px 130px;
+}
+
+/* Navegação */
+
+nav {
+    margin-bottom: 60px;
+}
+
+.navBar {
+    display: inline;
+}
+
+.navegation {
+    margin-right: 10px;
+}
+
+select {
+    background-color: white;
+    padding: 12px 50px 12px 20px;
+    border: 1px solid rgba(118, 115, 115, 0.493);
+    border-radius: 7px;
+    cursor: pointer;
+    appearance: none;
+}
+
+svg {
+    position: relative;
+    right: 40px;
+    cursor: pointer;
+}
+
+
+select:hover {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 128, 255);
+    color: white;
+    transition: 0.5s;
+}
+
+
+#inputSearch {
+    padding: 12px 15px;
+    border: 1px solid rgba(118, 115, 115, 0.493);
+    border-radius: 7px;
+}
+
+/* Header da tabela */
+
+th {
+    padding-right: 310px;
+    font-weight: 600;
+}
+
+/* Tabela */
+
+img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit:cover
+}
