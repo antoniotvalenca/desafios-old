@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" class="link" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Desafio 1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="navegation">Pesquisar</span>
+        <input
+          type="text"
+          class="navegation"
+          id="inputSearch"
+          placeholder="Buscar..."
+        />
+        <div class="navBar">
+          <select onchange="filterSelect(this)">
+            <option value="none" selected>Convênio</option>
+            <option value="Amil">Amil</option>
+            <option value="Bradesco">Bradesco</option>
+            <option value="Hapvida">Hapvida</option>
+            <option value="CASSI">CASSI</option>
+            <option value="Sulamérica">Sulamérica</option>
+          </select>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          <span id="navspan"> </span>
+          <button class="datebutton" id="monthbutton">Mês</button>
+          <button class="datebutton" id="daybutton">Hoje</button>
+        </div>
+      </nav>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <i class="fa-solid fa-sort-up" id="arrow"></i>
+          <th>Data</th>
+          <th>Número</th>
+          <th>Paciente</th>
+          <th>Convênio</th>
+          <th>Preço</th>
+        </tr>
+        <tr>
+          <th>
+            <hr size="2" width="3400%" noshade color="black" />
+          </th>
+        </tr>
+      </thead>
+      <tbody id="jsonEntry"></tbody>
+    </table>
+
+    <nav>
+      <ul id="pages" class="li">
+        <li>teste</li>
+        <li>teste</li>
+      </ul>
+    </nav>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
