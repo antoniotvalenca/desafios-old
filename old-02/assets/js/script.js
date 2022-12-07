@@ -153,13 +153,15 @@ const formatTable = data => {
     } else if (finalData.length <= QNT_RESULT_PAGE) {
         console.log(finalData);
         TABLE_HTML.innerHTML = finalData;
-    // } else if (finalData.length > QNT_RESULT_PAGE && finalData.length < patientData.length) {
-    //     const count = (currentPage * QNT_RESULT_PAGE) - QNT_RESULT_PAGE;
-    //     const delimiter = count + QNT_RESULT_PAGE;
+    } else if (finalData.length > QNT_RESULT_PAGE && finalData.length < patientData.length) {
+        if (currentPage == 3) currentPage = 1;
+        
+        const count = (currentPage * QNT_RESULT_PAGE) - QNT_RESULT_PAGE;
+        const delimiter = count + QNT_RESULT_PAGE;
 
-    //     for (let i = count; i < delimiter; i++) {
-    //         TABLE_HTML.innerHTML += finalData[i];
-    //     };
+        for (let i = count; i < delimiter; i++) {
+            TABLE_HTML.innerHTML += finalData[i];
+        };
     } else {
         const count = (currentPage * QNT_RESULT_PAGE) - QNT_RESULT_PAGE;
         const delimiter = count + QNT_RESULT_PAGE;
