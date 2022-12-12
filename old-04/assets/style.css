@@ -1,0 +1,42 @@
+body {
+    padding: 100px;
+}
+
+thead{
+    background-color: rgb(37, 119, 251);
+    color: white;
+}
+
+select {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+span {
+    position: relative;
+    left: 470px;
+}
+
+select:hover {
+    border:1px solid rgb(37, 119, 251);
+    background-color: rgb(37, 119, 251);
+    color: white;
+    transition: 0.5s;
+}
+
+#entradas {
+    color: green;
+    margin-right: 20px;
+}
+
+#saidas {
+    color: red;
+    margin-right: 20px;
+}
+
+#saldo {
+    color: blue;
+}
