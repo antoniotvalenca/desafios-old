@@ -53,16 +53,7 @@ const renderTable = data => {
     SAIDAS_HTML.innerHTML = `Tota de saídas: ${formatPrice(saidas)}`;
     SALDO_HTML.innerHTML = `Saldo: ${formatPrice(entradas+saidas)}`;
     TABLE_HTML.innerHTML = fullTable;
-}
-
-const init = async () => {
-    const initialFetch = await fetch("./material.json");
-    const fetchToJson = await initialFetch.json();
-    fullData = await fetchToJson;
-    renderTable(fullData);
 };
-
-init();
 
 const setSelect = select => {
     selectValue = select.value;
@@ -84,3 +75,12 @@ const setSelect = select => {
         renderTable(outData);
     };
 };
+
+const init = async () => {
+    const initialFetch = await fetch("./material.json");
+    const fetchToJson = await initialFetch.json();
+    fullData = await fetchToJson;
+    renderTable(fullData);
+};
+
+init();
